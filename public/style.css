@@ -1,0 +1,35 @@
+body {
+	padding: 10px;
+	background-color: aliceblue;
+	font-family: "Roboto",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.parent-container {
+	margin-bottom: 10px;
+}
+.title {
+	float: left;
+}
+.g-signin2 {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+.container {
+	clear: both;
+}
+
+.settings {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.graph-container {
+	position: relative;
+	background-color: white;
+}
+
+.graph {
+	padding-top: 20px;
+}

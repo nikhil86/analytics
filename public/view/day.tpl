@@ -11,7 +11,6 @@
             </div>
             <div class="modal-body">
                 <form role="form">
-                    <%= startDate %>
                     <div class="form-group">
                         <label for="browser-start-date">Start Date:</label>
                         <input type="date" class="form-control start-date" id="browser-start-date" value="<%= startDate %>">

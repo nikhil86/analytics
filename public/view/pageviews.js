@@ -50,8 +50,9 @@ define(function(require) {
             });
             data.addRows(arr);
 
+            var startDate = moment(this.startDate).format("MMM Do YY");
             // Set chart options
-            var options = {'title':'Page View Statisics for ' + this.startDate,
+            var options = {'title':'Page View Statisics for ' + startDate,
                 'width':'100%',
                 'height':300};
 

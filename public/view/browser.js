@@ -41,9 +41,10 @@ define(function(require) {
                 arr.push([obj.dimensions[0], parseInt(obj.metrics[0].values[0])]);
             });
             data.addRows(arr);
-
+            var startDate = moment(this.startDate).format("MMM Do YY");
+            var endDate = moment(this.endDate).format("MMM Do YY");
             // Set chart options
-            var options = {'title':'Number of Sessions per browser between ' + this.startDate + ' and ' + this.endDate,
+            var options = {'title':'Number of Sessions per browser between ' + startDate + ' and ' + endDate,
                 'width':600,
                 'height':300};
 

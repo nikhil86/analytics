@@ -19,9 +19,12 @@ define(function(require) {
         initialize: function () {
             Super.prototype.initialize.apply(this, arguments);
             this.counter = 0;
+            //this.viewIds = {
+            //    '68545212': 'Etihad',
+            //    '73430559': 'SY'
+            //};
             this.viewIds = {
-                '68545212': 'Etihad',
-                '73430559': 'SY'
+                '68545212': 'Etihad'
             };
         },
 

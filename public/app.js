@@ -17,7 +17,7 @@ define(function (require) {
         that.view.render();
         setTimeout(function () {
             that.run();
-        }, 120000);
+        }, 300000);
     };
 
     return App;

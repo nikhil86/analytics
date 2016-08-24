@@ -33,3 +33,24 @@ body {
 .graph {
 	padding-top: 20px;
 }
+
+.navbar {
+	height: 50px;
+}
+
+.navbar-brand {
+	background-image: url(/images/sabre-logo-slab.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 134px;
+	margin-right: 20px;
+}
+
+.navbar h3 {
+	color: white;
+}
+
+.page-content {
+	margin-top: 50px;
+}

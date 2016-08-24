@@ -27,6 +27,7 @@ define(function(require) {
 
         getViewId: function () {
             var keys = _.keys(this.viewIds);
+            this.counter = this.counter === keys.length ? 0 : this.counter;
             return keys[(this.counter++) % keys.length];
         },
 

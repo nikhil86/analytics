@@ -15,9 +15,9 @@ define(function (require) {
     App.prototype.run = function () {
         var that = this;
         that.view.render();
-        //setTimeout(function () {
-        //    that.run();
-        //}, 30000);
+        setTimeout(function () {
+            that.run();
+        }, 30000);
     };
 
     return App;

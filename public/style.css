@@ -11,8 +11,8 @@ body {
 }
 .g-signin2 {
 	position: absolute;
-	right: 0px;
-	top: 10px;
+	right: 10px;
+	top: 7px;
 }
 .container {
 	clear: both;
@@ -49,8 +49,13 @@ body {
 
 .navbar h3 {
 	color: white;
+	margin: 10px 0;
 }
 
 .page-content {
 	margin-top: 50px;
+}
+
+.navbar-right {
+	margin-right: 15px;
 }

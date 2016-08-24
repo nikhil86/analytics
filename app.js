@@ -31,6 +31,9 @@ app.get('/', function (req, res) {
 //	console.log('hello world');
 //});
 
-app.listen(3000, function () {
-	console.log('Analytics app listening on port 3000!');
+app.set('port', process.env.PORT || '3000');
+//var httpsServer = https.createServer(credentials, app);
+//httpsServer.listen(process.env.PORT || '3000');
+app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+	console.log('Analytics Server is up and listening on port number: ' + process.env.PORT);
 });

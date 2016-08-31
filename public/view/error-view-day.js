@@ -66,8 +66,8 @@ define(function(require) {
                 arr.push([obj.dimensions[0], parseInt(obj.metrics[0].values[0]), parseInt(startPageObj.metrics[0].values[0]), parseInt(confPageObj.metrics[0].values[0])]);
             });
             data.addRows(arr);
-            var startDate = moment(this.startDate).format("MMM Do YY");
-            var endDate = moment(this.endDate).format("MMM Do YY");
+            var startDate = moment(this.startDate).format("MMM Do");
+            var endDate = moment(this.endDate).format("MMM Do");
             // Set chart options
             var options = {'title':'Daily Error Statistics between ' + startDate + ' and ' + endDate,
                 'width':'100%',

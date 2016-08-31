@@ -39,7 +39,7 @@ define(function(require) {
             });
             data.addRows(arr);
 
-            var startDate = moment(this.startDate).format("MMM Do YY");
+            var startDate = moment(this.startDate).format("MMM Do");
             // Set chart options
             var options = {'title':'Number of Sessions per Hour on ' + startDate,
                 'width':'100%',

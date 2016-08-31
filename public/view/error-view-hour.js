@@ -63,11 +63,11 @@ define(function(require) {
                 }
                 var startPageObj = info[index + 1];
                 var confPageObj = info[index + 2];
-                arr.push([obj.dimensions[0], parseInt(obj.metrics[0].values[0]), parseInt(startPageObj.metrics[0].values[0]), parseInt(confPageObj.metrics[0].values[0])]);
+                arr.push([obj.dimensions[0], obj ? parseInt(obj.metrics[0].values[0]) : 0, startPageObj ? parseInt(startPageObj.metrics[0].values[0]) : 0, confPageObj ? parseInt(confPageObj.metrics[0].values[0]) : 0]);
             });
             data.addRows(arr);
 
-            var startDate = moment(this.startDate).format("MMM Do YY");
+            var startDate = moment(this.startDate).format("MMM Do");
             // Set chart options
             var options = {'title':'Hourly Error Statistics on ' + startDate,
                 'width':'100%',

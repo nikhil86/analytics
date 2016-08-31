@@ -43,8 +43,8 @@ define(function(require) {
             });
             data.addRows(arr);
 
-            var startDate = moment(this.startDate).format("MMM Do YY");
-            var endDate = moment(this.endDate).format("MMM Do YY");
+            var startDate = moment(this.startDate).format("MMM Do");
+            var endDate = moment(this.endDate).format("MMM Do");
             // Set chart options
             var options = {'title':'Number of Sessions per country between ' + startDate + ' and ' + endDate,
                 'width':600,
